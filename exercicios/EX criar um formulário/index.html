@@ -7,7 +7,20 @@
 </head>
 <body>
     <form action="algo.php" method="post">
-        Nome:<input type="text" name="nome" id="inome">
+        <p><label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="ipasse">Introduza a sua password</label>
+            <input type="password" name="passe" id="ipasse"></p>
+        <p><label for="inascimento">Data de nascimento</label>
+            <input type="date" name="nascimento" id="inascimento"></p>
+        <p><label for="itele">Telefone</label>
+            <input type="tel" name="tele" id="itele" placeholder="123-456-789" minlength="9" maxlength="9"></p>
+        <p><label for="imail">E_mail</label>
+            <input type="email" name="mail" id="imail"></p>
+        <p><label for="igen">Genero</label>
+            <input type="radio" name="gen" id="igen"> Masculino<br>
+            <input type="radio" name="gen" id="igen"> Feminino <br>
+            <input type="radio" name="gen" id="igen"> Outro</p>    
     </form>
 </body>
 </html>
