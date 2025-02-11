@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário">
+    <meta name="Author" content="Bruno Rocha">
     <title>Document</title>
 </head>
 <body>
@@ -20,7 +22,35 @@
         <p><label for="igen">Genero</label>
             <input type="radio" name="gen" id="igen"> Masculino<br>
             <input type="radio" name="gen" id="igen"> Feminino <br>
-            <input type="radio" name="gen" id="igen"> Outro</p>    
+            <input type="radio" name="gen" id="igen"> Outro</p>   
+        <p>
+            <label for="inat">Nacionalidade</label>
+            <select name="nat" id="inat">
+                <option value="P">Portuguesa</option>
+                <option value="O">Outro</option>
+            </select>
+        </p>
+        <p>
+            Escolheu este curso por motivos profissionais?
+            <br>
+            <input type="checkbox" name="s" id="is" checked>SIM
+            <br>
+            <input type="checkbox" name="n" id="in">NÃO
+        </p>
+        <p>
+            <label for="itexto">Descreva as suas motivações para frequentar este curso.</label>
+            <br>
+            <textarea name="texto" id="itexto" rows="50" cols="50"></textarea>
+        </p>
+        <p>
+            <label for="iran">Numa escala de 1 a 5 como avalia este curso?</label>
+            <input type="range" name="ran" id="iran" min="1" max="5">
+        </p>
+        <hr>
+        <p>
+            <input type="submit" value="Enviar Formulário">
+            <input type="reset" value="Apagar Formulário">
+        </p>
     </form>
 </body>
 </html>
