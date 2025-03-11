@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        span {
+            font-style: italic;
+        }
         img {
             width: 200px;
             height: 100px;
@@ -16,22 +19,49 @@
             color: orange;
         }
 
-        
+        #d2 {
+            background-image: url(imagens/masterd.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            text-align: center;
+        }
+
+        #d2 > a {
+            background-color: orange;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        #d2 > p {
+            background-color: rgba(0, 0, 0, 0.541);
+        }
+
+        #d3 {
+            background-color: rgba(255, 106, 0, 0.337);
+            padding: 5px;
+            margin: 10px;
+            border: 2px dotted orange;
+        }
+
+        #d3 > h2 {
+            background-color: rgba(255, 166, 0, 0.591);
+            border-left: 5px solid rgb(255, 68, 0);
+            
+        }
     </style>
 </head>
 <body>
     <div>
         <img src="imagens/masterd.jpg" alt="Logotipo masterd">
-        <p>Master D 25 anos a preparar profissionais!</p>
+        <p><span>Master D</span> 25 anos a preparar profissionais!</p>
     </div>
     <div id="d2">
-        <img src="imagens/masterd.jpg" alt="">
         <h1>Curso Master D</h1>
         <p>Torne-se um profissional</p>
         <a href="">+ informações</a>
     </div>
     <div id="d3">
-        <h2>Curso em destaque Master D</h2>
+        <h2>Curso em destaque <span>Master D</span></h2>
         <ul>
             <li>Curso de auxiliar de veterinária</li>
             <li>Curso de matemática</li>
