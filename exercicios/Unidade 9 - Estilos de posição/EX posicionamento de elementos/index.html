@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.cabecalho > h2 {
+            background-color: brown;
+            color: white;
+            text-align: center;
+            width: 50%;
+            padding: 20px;
+            position: relative;
+            left: 25%;
+        }
+
+        img {
+            width: 700px;
+            height: auto;
+        }
+
+        .container {
+            position: fixed;
+        }
+
+        .container > .topleft {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            font-size: 18px;
+        }
+
+        .container > .topright {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            font-size: 18px;
+        }
+
+        .container > .bottomleft {
+            position: absolute;
+            bottom: 50px;
+            left: 16px;
+            font-size: 18px;
+        }
+
+        .container > .bottomright {
+            position: absolute;
+            bottom: 50px;
+            right: 16px;
+            font-size: 18px;
+        }
+
+        .container > .center {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cabecalho">
+        <h2>Exercício prático - Unidade 9</h2>
+        <p>Neste  exercício  prático  vamos  identificar  os  cantos  e  o  centro da imagem</p>
+    </div>
+    <div class="container">
+        <img src="imagens/masterd.webp" alt="masterd">
+        <div class="topleft">
+            <p>canto superior esquerdo</p>
+        </div>
+        <div class="topright">
+            <p>canto superior direito</p>
+        </div>
+        <div class="bottomleft">
+            <p>canto inferior esquerdo</p>
+        </div>
+        <div class="bottomright">
+            <p>canto inferior direito</p>
+        </div>
+        <div class="center">
+            <p>centro</p>
+        </div>
+    </div>
+</body>
+</html>
