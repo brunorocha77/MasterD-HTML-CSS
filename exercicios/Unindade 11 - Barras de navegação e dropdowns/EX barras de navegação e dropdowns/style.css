@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navBar {
+    margin: 5px;
+    background-color: rgba(62, 30, 159, 0.838);
+    height: 70px;
+}
+
+.dropd {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdCont {
+    position: absolute;
+    display: none;
+    border: 1px solid rgba(0, 0, 0, 0.087);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.028);
+    background-color: white;
+}
+
+.dropdCont a {
+    width: 138px;
+    display: block;
+    padding: 12px;
+    margin: 10px;
+    color: black;
+}
+
+.dropd:hover {
+    background-color: aquamarine;
+}
+
+.dropd:hover .dropdCont {
+    display: block;
+}
+
+a, span {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
