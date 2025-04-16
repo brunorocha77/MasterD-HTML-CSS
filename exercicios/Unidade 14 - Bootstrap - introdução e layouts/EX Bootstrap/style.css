@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+
+header {
+    background-color: #3C6E71;
+}
+
+menu {
+    background-color: #284B63;
+}
+
+.col-sm-4, .col-sm-3 {
+    border: 1px solid black;
+}
+
+.col-sm-4, .col-sm-3, .col-sm-2 {
+    min-height: 100px;
+}
+
+#first {
+    background-color: rgb(128, 128, 128);
+}
+
+#second {
+    background-color: #284B63;
+}
+
+#first, #second {
+    justify-content: center;
+    margin: 5px;
+}
+
+#logo {
+    background-color: black;
+}
+
+footer {
+    background-color: black;
+    padding: 15px 10px 5px 10px;
+}
