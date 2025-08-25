@@ -12,3 +12,25 @@
     margin: 0px;
     background-color: var(--cor1);
 }
+
+img#logo {
+    height: 15vh;
+    display: inline-block;
+}
+.navbar{
+    width: 40vw;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-self: end;  
+    display: inline-block;   
+}
+.navbar a, nav {
+    background-color: black;
+    
+}
+
+.navbar a:link {
+    color: white;
+    text-decoration: none;
+
+}
