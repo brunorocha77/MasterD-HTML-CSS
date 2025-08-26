@@ -40,11 +40,11 @@ img#logo {
 }
 
 #redes {
-    max-width: 60vw;
-    width: auto;
-    margin: 0px;
+    width: 60vw;
+    margin: 30px 0px 0px 0px;
     padding: 0px;
-    
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .col-sm-3 {
