@@ -13,24 +13,45 @@
     background-color: var(--cor1);
 }
 
+header {
+    background-color: rgba(0, 0, 0, 0.929);
+}
+
 img#logo {
-    height: 15vh;
-    display: inline-block;
+    height: 12vh;
+    margin-left: 5px;
 }
 .navbar{
+    height: 12vh;
     width: 40vw;
     padding-left: 50px;
     padding-right: 50px;
-    justify-self: end;  
-    display: inline-block;   
+    justify-self: end;
+    float: right;
+    
 }
 .navbar a, nav {
     background-color: black;
-    
 }
 
 .navbar a:link {
     color: white;
     text-decoration: none;
+}
 
+#redes {
+    max-width: 60vw;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.col-sm-3 {
+    align-items: center;
+    justify-content: center;
+}
+
+footer > h1, div {
+    text-align: center;
 }
