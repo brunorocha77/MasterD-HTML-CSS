@@ -14,12 +14,11 @@
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.929);
+    background-color: black;
 }
 
 img#logo {
     height: 12vh;
-    margin-left: 5px;
 }
 .navbar{
     height: 12vh;
@@ -34,8 +33,28 @@ img#logo {
     background-color: black;
 }
 
-.navbar a:link {
-    color: white;
+.navbar a {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navbar a:any-link {
+    color: var(--cor1);
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: red;
+    background-color: white;
+}
+
+#email {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#email a:any-link {
+    color: rgb(186, 0, 0);
     text-decoration: none;
 }
 
@@ -52,6 +71,22 @@ img#logo {
     justify-content: center;
 }
 
-footer > h1, div {
+footer > h1, h2, div {
     text-align: center;
+}
+
+footer > h1 {
+    font-size: 32px;
+}
+
+footer > h2 {
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+footer > hr {
+    color: black;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
