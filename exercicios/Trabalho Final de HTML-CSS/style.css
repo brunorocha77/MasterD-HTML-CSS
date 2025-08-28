@@ -48,6 +48,25 @@ img#logo {
     background-color: white;
 }
 
+main > h1 {
+    margin: 0px;
+    text-align: center;
+}
+
+#banda {
+    font-size: 70px;
+}
+
+#imagens > .col-sm-4 {
+    border: 10px 10px black;
+    border-radius: 5px;
+}
+
+#imagens img {
+    height: 400px;
+    width: 400px;
+}
+
 #email {
     margin-top: 20px;
     margin-bottom: 40px;
