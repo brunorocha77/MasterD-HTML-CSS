@@ -27,8 +27,8 @@ img#logo {
     padding-right: 50px;
     justify-self: end;
     float: right;
-    
 }
+
 .navbar a, nav {
     background-color: black;
 }
@@ -36,6 +36,7 @@ img#logo {
 .navbar a {
     padding: 10px;
     border-radius: 5px;
+    transition-duration: .3s;
 }
 
 .navbar a:any-link {
@@ -57,37 +58,25 @@ main > h1 {
     font-size: 70px;
 }
 
-#imagens > .col-sm-4 {
-    border: 10px 10px black;
-    border-radius: 5px;
+#imagens .col-sm-4 {
+    padding: 15px;
 }
 
 #imagens img {
     height: 400px;
     width: 400px;
+    background-color: black;
+    border-radius: 10px;
 }
 
-#email {
-    margin-top: 20px;
-    margin-bottom: 40px;
+main > h2 {
+    margin: 0px;
+    padding-top: 100px;
+    padding-bottom: 20px;
 }
 
-#email a:any-link {
-    color: rgb(186, 0, 0);
-    text-decoration: none;
-}
-
-#redes {
-    width: 60vw;
-    margin: 30px 0px 0px 0px;
-    padding: 0px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.col-sm-3 {
-    align-items: center;
-    justify-content: center;
+#datas {
+    
 }
 
 footer > h1, h2, div {
@@ -108,4 +97,20 @@ footer > hr {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+}
+
+#email {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#email a:any-link {
+    color: rgb(186, 0, 0);
+    text-decoration: none;
+}
+
+#redes {
+    width: 60vw;
+    margin: 30px auto;
+    padding: 0px;
 }
