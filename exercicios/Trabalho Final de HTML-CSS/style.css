@@ -75,8 +75,55 @@ main > h2 {
     padding-bottom: 20px;
 }
 
+/* Para já deixar assim (VOLTAR AQUI!!!!!)
+
 #datas {
-    
+    float: right;
+}
+
+*/
+
+#datas > .row {
+    padding: 30px 0px;
+}
+
+#datas hr {
+    color: black;
+    width: 50vw;
+    margin: 0px auto;
+}
+
+#datas #bold {
+    font-weight: bold;
+}
+
+#datas p, a {
+    margin: 2px;
+}
+
+#datas a {
+    background-color: rgb(161, 7, 7);
+    width: 10vw;
+    margin: 10px auto 0px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition-duration: .5s;
+    border-radius: 10px;
+}
+
+#datas a:any-link{
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+#datas a:hover {
+    background-color: rgb(60, 60, 60);
+    color: var(--cor1);
+}
+
+#datas #todas {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 footer > h1, h2, div {
@@ -85,6 +132,7 @@ footer > h1, h2, div {
 
 footer > h1 {
     font-size: 32px;
+    padding-top: 100px;
 }
 
 footer > h2 {
