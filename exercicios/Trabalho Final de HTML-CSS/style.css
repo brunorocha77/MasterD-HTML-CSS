@@ -59,15 +59,16 @@ main > h1 {
   font-size: 70px;
 }
 
-#imagens .col-sm-4 {
-  padding: 15px;
-}
-
 #imagens img {
   height: 400px;
   width: 400px;
   background-color: black;
   border-radius: 10px;
+  margin: 15px;
+}
+
+#imagens p {
+  padding: 15px;
 }
 
 main > h2 {
@@ -158,4 +159,152 @@ footer > hr {
   width: 60vw;
   margin: 30px auto;
   padding: 0px;
+}
+
+@media screen and (min-width: 568px) and (max-width: 768px) {
+  header {
+    background-color: black;
+  }
+
+  img#logo {
+    height: 12vh;
+  }
+  .navbar {
+    padding: 0px;
+    height: 12vh;
+    width: 80vw;
+    justify-self: end;
+    float: right;
+  }
+
+  .navbar a,nav {
+    background-color: black;
+  }
+
+  .navbar a {
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+  }
+
+  .navbar a:any-link {
+    color: var(--cor1);
+    text-decoration: none;
+  }
+
+  .navbar a:hover {
+    color: red;
+    background-color: white;
+  }
+
+  main > h1 {
+    margin: 0px;
+    text-align: center;
+  }
+
+  #banda {
+    font-size: 70px;
+  }
+
+  #imagens img {
+    height: 400px;
+    width: 400px;
+    background-color: black;
+    border-radius: 10px;
+    margin: 15px;
+  }
+
+  #imagens p {
+    padding: 15px;
+  }
+
+  main > h2 {
+    margin: 0px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    font-size: 46px;
+  }
+
+  #datas > .row {
+    padding: 30px 0px;
+  }
+
+  #datas hr {
+    color: black;
+    width: 50vw;
+    margin: 0px auto;
+  }
+
+  #datas #bold {
+    font-weight: bold;
+  }
+
+  #datas p,
+  a {
+    margin: 2px;
+  }
+
+  #datas a {
+    background-color: rgb(161, 7, 7);
+    width: 10vw;
+    margin: 10px auto 0px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition-duration: 0.3s;
+    border-radius: 10px;
+  }
+
+  #datas a:any-link {
+    text-decoration: none;
+    color: var(--cor1);
+  }
+
+  #datas a:hover {
+    background-color: rgb(60, 60, 60);
+    color: var(--cor1);
+  }
+
+  #datas #todas {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  footer > h1,
+  h2,
+  div {
+    text-align: center;
+  }
+
+  footer > h1 {
+    font-size: 32px;
+    padding-top: 100px;
+  }
+
+  footer > h2 {
+    margin-top: 30px;
+    font-size: 25px;
+  }
+
+  footer > hr {
+    color: black;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #email {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  #email a:any-link {
+    color: rgb(186, 0, 0);
+    text-decoration: none;
+  }
+
+  #redes {
+    width: 60vw;
+    margin: 30px auto;
+    padding: 0px;
+  }
 }
