@@ -23,14 +23,13 @@ img#logo {
 .navbar {
   height: 12vh;
   width: 40vw;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
   justify-self: end;
   float: right;
 }
 
-.navbar a,
-nav {
+.navbar a, nav {
   background-color: black;
 }
 
@@ -57,14 +56,23 @@ main > h1 {
 
 #banda {
   font-size: 70px;
+  padding-top: 20px;
+}
+
+#novidades {
+  display: flex;
+}
+
+#imagens {
+  flex: auto;
+  flex-direction: column;
 }
 
 #imagens img {
-  height: 400px;
-  width: 400px;
+  height: 350px;
+  width: 350px;
   background-color: black;
   border-radius: 10px;
-  
 }
 
 #imagens p {
@@ -157,6 +165,7 @@ footer > hr {
   width: 60vw;
   margin: 30px auto;
   padding: 0px;
+  display: flex;
 }
 
 #redes p {
@@ -165,6 +174,11 @@ footer > hr {
 
 #redes img {
   margin-bottom: 10px;
+}
+
+#redes > .row {
+  flex: auto;
+  flex-direction: row;
 }
 
 @media screen and (max-width: 600px){
@@ -181,6 +195,11 @@ footer > hr {
 
   #banda {
     font-size: 30px;
+    padding-top: 10px;
+  }
+
+  #novidades {
+    display: block;
   }
 
   #imagens img {
@@ -226,13 +245,17 @@ footer > hr {
   }
 
   #redes {
-    width: 100vw;
     margin: 30px auto;
     padding: 0px;
+    display: block;
   }
 
   #redes p {
     font-size: 14px;
+  }
+
+  #redes > .row > a {
+    margin: 0px;
   }
 }
 
@@ -250,6 +273,11 @@ footer > hr {
 
   #banda {
     font-size: 30px;
+    padding-top: 10px;
+  }
+
+  #novidades {
+    display: block;
   }
 
   #imagens img {
@@ -298,27 +326,33 @@ footer > hr {
     width: 100vw;
     margin: 30px auto;
     padding: 0px;
+    display: block;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .navbar {
     padding: 0px 5px 0px 0px;
-    width: 45vw;
+    width: 60vw;
   }
 
   .navbar a {
-    padding: 4px;
+    padding: 8px;
     margin: 0px;
   }
 
   #banda {
     font-size: 40px;
+    padding-top: 10px;
+  }
+
+  #novidades {
+    display: block;
   }
 
   #imagens img {
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
   }
 
   #imagens p {
@@ -356,8 +390,97 @@ footer > hr {
   footer > hr {
     width: 75vw;
   }
+
+  #redes {
+    display: flex;
+    width: 80vw;
+  }
+
+  #redes > .row {
+    flex: auto;
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1200px){
+  .navbar {
+    padding: 0px 5px 0px 0px;
+    width: 45vw;
+  }
 
+  .navbar a {
+    padding: 6px;
+    margin: 0px;
+  }
+
+  #banda {
+    font-size: 40px;
+    padding-top: 10px;
+  }
+
+  #novidades {
+    display: flex;
+  }
+
+  #imagens {
+    flex: auto;
+    flex-direction: row;
+    flex-basis: 0;
+  }
+
+  #imagens a {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #imagens img {
+    height: 280px;
+    width: 280px;
+  }
+
+  #imagens p {
+    font-size: 16px;
+  }
+
+  main > h2 {
+    font-size: 28px;
+  }
+  
+  #datas hr {
+    width: 75vw;
+  }
+
+  #datas p, a {
+    font-size: 16px;
+  }
+
+  #datas a {
+    width: 30vw;
+  }
+
+  footer > h1, h2, div {
+    text-align: center;
+  }
+
+  footer > h1 {
+    font-size: 34px;
+  }
+
+  footer > h2 {
+    font-size: 28px;
+  }
+
+  footer > hr {
+    width: 75vw;
+  }
+
+  #redes {
+    display: flex;
+    width: 70vw;
+  }
+
+  #redes > .row {
+    flex: auto;
+    flex-direction: row;
+  }
 }
