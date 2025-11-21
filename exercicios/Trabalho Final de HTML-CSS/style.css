@@ -181,7 +181,7 @@ footer > hr {
   flex-direction: row;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
   .navbar {
     padding: 0px 5px 0px 0px;
     width: 70vw;
@@ -227,7 +227,7 @@ footer > hr {
   }
 
   #datas a {
-    width: 30vw;
+    width: 15vw;
   }
 
   footer > h1 {
@@ -305,7 +305,7 @@ footer > hr {
   }
 
   #datas a {
-    width: 30vw;
+    width: 15vw;
   }
 
   footer > h1 {
@@ -372,7 +372,7 @@ footer > hr {
   }
 
   #datas a {
-    width: 30vw;
+    width: 15vw;
   }
 
   footer > h1, h2, div {
@@ -402,7 +402,7 @@ footer > hr {
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1200px){
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
   .navbar {
     padding: 0px 5px 0px 0px;
     width: 45vw;
@@ -452,10 +452,6 @@ footer > hr {
 
   #datas p, a {
     font-size: 16px;
-  }
-
-  #datas a {
-    width: 30vw;
   }
 
   footer > h1, h2, div {

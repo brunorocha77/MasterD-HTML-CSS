@@ -12,30 +12,80 @@
     <style>
         #capas {
             margin: 0px auto;
+            width: 100vw;
         }
 
         #capas img {
-            height: 400px;
-            width: 400px;
+            height: 350px;
+            width: 350px;
             background-color: black;
             border-radius: 10px;
         }
 
         #capas h3 {
             margin-top: 12px;
+            font-size: 18px;
         }
 
         #capas p {
             color: gray;
         }
 
-        main .row {
-            padding: 30px 0px;
+        #pequeno, #menor {
+            display: flex;
+            padding-top: 30px;
+        }
+
+        #pequeno {
+            margin-left: -12px;
         }
 
         #menor {
-            width: 60vw;
-            margin: 0px auto;
+            width: 65vw;
+        }
+
+        .row {
+            flex: auto;
+            flex-direction: column;
+            padding: 0px 10px;
+        }
+
+        @media screen and (min-width: 600px) and (max-width: 768px) {
+            #pequeno, #menor {
+                display: block;
+                padding: 0px;
+            }
+
+            .row {
+                padding-top: 30px;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            #capas img {
+                height: 370px;
+                width: 370px;
+            }
+
+            #pequeno, #menor {
+                display: block;
+                padding: 0px;
+            }
+
+            .row {
+                padding-top: 30px;
+            }
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1200px) {
+            #capas img {
+                height: 270px;
+                width: 270px;
+            }
+
+            #pequeno {
+                margin-left: -5px;
+            }
         }
     </style>
 </head>
@@ -54,64 +104,64 @@
         <h1 id="banda">Avenged Sevenfold</h1>
         <h2>Discografia</h2>
         <div id="capas" class="container">
-            <div class="row">
-                <div class="col-sm-4">
+            <div id="pequeno" class="container">
+                <div class="row">
                     <a href="https://open.spotify.com/intl-pt/album/50YNY0xy9uJ0U9eFQBdLJa?go=1&referral=labelaffiliate&nd=1&dlsi=53ce433622ca4491"><img src="imagens/capas/Life Is But a Dream (capa).jpg" alt="Capa do album 'LIFE IS BUT A DREAM...'"></a>
                     <h3>LIFE IS BUT A DREAM...</h3>
                     <p>2023</p>
                 </div>
-                <div class="col-sm-4">
+                <div class="row">
                     <a href="https://open.spotify.com/intl-pt/album/1cw8vqbfe9UetxpJmXNk5p?nd=1&dlsi=f7783ed908c2441f"><img src="imagens/capas/Black Reign (capa).jpg" alt="Capa do album 'BLACK REIGN'"></a>
                     <h3>BLACK REIGN</h3>
                     <p>2018</p>
                 </div>
-                <div class="col-sm-4">
+                <div class="row">
                     <a href="https://open.spotify.com/intl-pt/album/2DP53sWGPrqlsIZV2JaJYo?nd=1&dlsi=8e8af47d55864e5d"><img src="imagens/capas/Live At The Grammy Museum (capa).jpg" alt="Capa do album 'LIVE AT THE GRAMMY MUSEUM'"></a>
                     <h3>LIVE AT THE GRAMMY MUSEUM</h3>
                     <p>2017</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-4">
+            <div id="pequeno" class="container">
+                <div class="row">
                     <a href="https://open.spotify.com/intl-pt/album/0OJ2cB135AqvHEtfXifM5D?nd=1&dlsi=1652b96b4c984676"><img src="imagens/capas/The Stage - Deluxe Edition (capa).jpg" alt="Capa do album 'THE STAGE (DELUXE EDITION)'"></a>
                     <h3>THE STAGE (DELUXE EDITION)</h3>
                     <p>2017</p>
                 </div>
-                <div class="col-sm-4">
+                <div class="row">
                     <a href="https://open.spotify.com/intl-pt/album/0vINJeraREv5ySgWs57Dko?nd=1&dlsi=c7fe2fb517974f3f"><img src="imagens/capas/The Stage (capa).jpg" alt="Capa do album 'THE STAGE'"></a>
                     <h3>THE STAGE</h3>
                     <p>2016</p>
                 </div>
-                <div class="col-sm-4">
+                <div class="row">
                     <a href="https://open.spotify.com/intl-pt/album/0ks45m1bsP2JsZpM5D2FFA?nd=1&dlsi=76dd36f155fe4f52"><img src="imagens/capas/Hail To The King (capa).jpg" alt="Capa do album 'HAIL TO THE KING'"></a>
                     <h3>HAIL TO THE KING</h3>
                     <p>2013</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-4">
+            <div id="pequeno" class="container">
+                <div class="row">
                     <a href="https://open.spotify.com/intl-pt/album/7vfuTRXIAYJz5Uc8SddnTr?nd=1&dlsi=7bd299bb6e7d427a"><img src="imagens/capas/Nightmare (capa).jpg" alt="Capa do album 'NIGHTMARE'"></a>
                     <h3>NIGHTMARE</h3>
                     <p>2010</p>
                 </div>
-                <div class="col-sm-4">
+                <div class="row">
                     <a href="https://open.spotify.com/intl-pt/album/3Id3VUk9jSKBD1guNo1buF?nd=1&dlsi=58a6b877f7c847a8"><img src="imagens/capas/Avenged Sevenfold (capa).jpg" alt="Capa do album 'AVENGED SEVENFOLD'"></a>
                     <h3>AVENGED SEVENFOLD</h3>
                     <p>2007</p>
                 </div>
-                <div class="col-sm-4">
+                <div class="row">
                     <a href="https://open.spotify.com/intl-pt/album/55tK4Ab7XHTOKkw0xDz3AA?nd=1&dlsi=e22a108337c64746"><img src="imagens/capas/City Of Evil (capa).jpg" alt="Capa do album 'CITY OF EVIL'"></a>
                     <h3>CITY OF EVIL</h3>
                     <p>2005</p>
                 </div>
             </div>
-            <div id="menor" class="row">
-                <div class="col-sm-6">
+            <div id="menor" class="container">
+                <div class="row">
                     <a href="https://open.spotify.com/intl-pt/album/3qyVLEW74vRMvVxNHjwKhk?nd=1&dlsi=8a0137138b444580"><img src="imagens/capas/Waking The Fallen (capa).jpg" alt="Capa do album 'WAKING THE FALLEN'"></a>
                     <h3>WAKING THE FALLEN</h3>
                     <p>2003</p>
                 </div>
-                <div class="col-sm-6">
+                <div class="row">
                     <a href="https://open.spotify.com/intl-pt/album/3Pi6o8NqDPlEBilGeMKi8q?nd=1&dlsi=ea28838d2c204619"><img src="imagens/capas/Sounding The Seventh Trumpet (capa).jpg" alt="Capa do album 'SOUNDING THE SEVENTH TRUMPET'"></a>
                     <h3>SOUNDING THE SEVENTH TRUMPET</h3>
                     <p>2001</p>
@@ -125,18 +175,22 @@
         <div id="email"><a href="">avengedsvnf@exemplo.com</a></div>
         <hr>
         <h2>Redes Sociais</h2>
-        <div id="redes" class="container" >
+        <div id="redes" class="container">
             <div class="row">
-                <div class="col-sm-3"><p>AvengedSevenfold</p></div>
-                <div class="col-sm-3"><p>TheOfficialA7X</p></div>
-                <div class="col-sm-3"><p>@avengedsevenfold</p></div>
-                <div class="col-sm-3"><p>avengedsevenfold</p></div>  
+                <p>AvengedSevenfold</p>
+                <a href="https://www.facebook.com/AvengedSevenfold" target="_blank"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="facebook-new"/></a>
             </div>
-            <div id="icons" class="row">
-                <div class="col-sm-3"><a href="https://www.facebook.com/AvengedSevenfold" target="_blank"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="facebook-new"/></a></div>
-                <div class="col-sm-3"><a href="https://x.com/TheOfficialA7X" target="_blank"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/twitterx--v1.png" alt="twitterx--v1"/></a></div>
-                <div class="col-sm-3"><a href="https://www.instagram.com/avengedsevenfold" target="_blank"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/instagram-new--v1.png" alt="instagram-new--v1"/></a></div>
-                <div class="col-sm-3"><a href="https://www.youtube.com/user/avengedsevenfold" target="_blank"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/youtube-play.png" alt="youtube-play"/></a></div>
+            <div class="row">
+                <p>TheOfficialA7X</p>
+                <a href="https://x.com/TheOfficialA7X" target="_blank"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/twitterx--v1.png" alt="twitterx--v1"/></a>
+            </div>
+            <div class="row">
+                <p>@avengedsevenfold</p>
+                <a href="https://www.instagram.com/avengedsevenfold" target="_blank"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/instagram-new--v1.png" alt="instagram-new--v1"/></a>
+            </div>
+            <div class="row">
+                <p>avengedsevenfold</p>
+                <a href="https://www.youtube.com/user/avengedsevenfold" target="_blank"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/youtube-play.png" alt="youtube-play"/></a>
             </div>
         </div>
     </footer>
