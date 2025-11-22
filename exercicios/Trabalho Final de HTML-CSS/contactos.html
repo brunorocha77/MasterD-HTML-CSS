@@ -11,7 +11,7 @@
     <title>Avenged Sevenfold</title>
     <style>
         main div {
-            padding: 10px 0px 10px 0px;
+            padding: 10px 0px;
         }
 
         label {
@@ -30,7 +30,7 @@
 
         #btns {
             width: 25vw;
-            margin: 0px auto 0px auto;
+            margin: 0px auto;
             padding-top: 20px;
         }
 
@@ -41,6 +41,24 @@
 
         .row, img {
             padding: 0px;
+        }
+
+        #form {
+            padding-top: 30px;
+        }
+
+        @media screen and (max-width: 768px) {
+            #btns {
+                width: 40vw;
+            }
+            
+            #btns input {
+                width: 15vw;
+            }
+
+            .col-sm-3 label {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
@@ -57,31 +75,31 @@
     </header>
     <main>
         <h1 id="banda">Avenged Sevenfold</h1>
-        <div class="container">
+        <div id="form" class="container">
             <form action="email.php" method="get" autocomplete="on">
                 <div class="row">
-                    <div class="col-sm-2"><label for="inome">Nome</label></div>
-                    <div class="col-sm-10"><input type="text" name="nome" id="inome" placeholder="Ex: John" minlength="3" maxlength="25" required></div>
+                    <div class="col-sm-3"><label for="inome">Nome</label></div>
+                    <div class="col-sm-9"><input type="text" name="nome" id="inome" placeholder="Ex: John" minlength="3" maxlength="25" required></div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-2"><label for="isobrenome">Sobremone</label></div>
-                    <div class="col-sm-10"><input type="text" name="sobrenome" id="isobrenome" placeholder="Ex: Doe" minlength="3" maxlength="25" required></div>
+                    <div class="col-sm-3"><label for="isobrenome">Sobremone</label></div>
+                    <div class="col-sm-9"><input type="text" name="sobrenome" id="isobrenome" placeholder="Ex: Doe" minlength="3" maxlength="25" required></div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-2"><label for="idatan">Data de Nascimento</label></div>
-                    <div class="col-sm-10"><input type="date" name="datan" id="idatan" required></div>
+                    <div class="col-sm-3"><label for="idatan">Data de Nascimento</label></div>
+                    <div class="col-sm-9"><input type="date" name="datan" id="idatan" required></div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-2"><label for="iemail">Email</label></div>
-                    <div class="col-sm-10"><input type="email" name="email" id="iemail" placeholder="Ex: johndoe@gmail.com" autocomplete="email" required></div>
+                    <div class="col-sm-3"><label for="iemail">Email</label></div>
+                    <div class="col-sm-9"><input type="email" name="email" id="iemail" placeholder="Ex: johndoe@gmail.com" autocomplete="email" required></div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-2"><label for="itel">Número de Telefone</label></div>
-                    <div class="col-sm-10"><input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d+{3}\)\d{3}-\d{3}\-d{3}$" required></div>
+                    <div class="col-sm-3"><label for="itel">Número de Telefone</label></div>
+                    <div class="col-sm-9"><input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d+{3}\)\d{3}-\d{3}\-d{3}$" required></div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-2"><label for="imensagem">Deixe uma mensagem</label></div>
-                    <div class="col-sm-10"><textarea name="mensagem" id="imensagem" placeholder="Escreva aqui..."></textarea></div>
+                    <div class="col-sm-3"><label for="imensagem">Deixe uma mensagem</label></div>
+                    <div class="col-sm-9"><textarea name="mensagem" id="imensagem" placeholder="Escreva aqui..."></textarea></div>
                 </div>
                 <div id="btns" class="row">
                     <div class="col-sm-6"><input class="btn btn-primary" type="reset" value="Limpar"></div>
