@@ -65,19 +65,19 @@ main > h1 {
   display: flex;
 }
 
-#imagens {
+#novidades > .row {
   flex: auto;
   flex-direction: column;
 }
 
-#imagens img {
+#novidades > .row img {
   height: 350px;
   width: 350px;
   background-color: black;
   border-radius: 10px;
 }
 
-#imagens p {
+#novidades > .row > p {
   padding: 15px;
 }
 
